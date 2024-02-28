@@ -16,28 +16,28 @@ namespace DefaultNamespace.InputSystem {
         public UnityEvent JumpInputReleased;
         
         public void UpInput(InputAction.CallbackContext context) {
-            if(context.performed) UpInputPressed.Invoke();
-            else if(context.canceled) UpInputReleased.Invoke();
+            if(context.performed) UpInputPressed?.Invoke();
+            else if(context.canceled) UpInputReleased?.Invoke();
         }
         
         public void DownInput(InputAction.CallbackContext context) {
-            if(context.performed) DownInputPressed.Invoke();
-            else if(context.canceled) DownInputReleased.Invoke();
+            if(context.performed) DownInputPressed?.Invoke();
+            else if(context.canceled) DownInputReleased?.Invoke();
         }
         
         public void LeftInput(InputAction.CallbackContext context) {
-            if(context.performed) LeftInputPressed.Invoke();
-            else if(context.canceled) LeftInputReleased.Invoke();
+            if(context.performed) LeftInputPressed?.Invoke();
+            else if(context.canceled) LeftInputReleased?.Invoke();
         }
         
         public void RightInput(InputAction.CallbackContext context) {
-            if(context.performed) RightInputPressed.Invoke();
-            else if(context.canceled) RightInputReleased.Invoke();
+            if(context.performed) RightInputPressed?.Invoke();
+            else if(context.canceled) RightInputReleased?.Invoke();
         }
         
         public void JumpInput(InputAction.CallbackContext context) {
-            if(context.performed) JumpInputPressed.Invoke();
-            else if(context.canceled) JumpInputReleased.Invoke();
+            if(context.performed) JumpInputPressed?.Invoke();
+            else if(context.canceled) JumpInputReleased?.Invoke();
         }
         
     }

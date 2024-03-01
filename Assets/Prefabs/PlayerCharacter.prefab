@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.88
+      value: -6.3417606
       objectReference: {fileID: 0}
     - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.931427
+      value: -2.0873137
       objectReference: {fileID: 0}
     - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -94,19 +94,79 @@ MonoBehaviour:
       m_Calls: []
   LeftInputPressed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6535761552966430483}
+        m_TargetAssemblyTypeName: DefaultNamespace.HorizontalMovements, Assembly-CSharp
+        m_MethodName: MoveLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   LeftInputReleased:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6535761552966430483}
+        m_TargetAssemblyTypeName: DefaultNamespace.HorizontalMovements, Assembly-CSharp
+        m_MethodName: StopMoving
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   RightInputPressed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6535761552966430483}
+        m_TargetAssemblyTypeName: DefaultNamespace.HorizontalMovements, Assembly-CSharp
+        m_MethodName: MoveRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   RightInputReleased:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6535761552966430483}
+        m_TargetAssemblyTypeName: DefaultNamespace.HorizontalMovements, Assembly-CSharp
+        m_MethodName: StopMoving
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   JumpInputPressed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8165731137363514011}
+        m_TargetAssemblyTypeName: DefaultNamespace.Jump, Assembly-CSharp
+        m_MethodName: JumpAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   JumpInputReleased:
     m_PersistentCalls:
       m_Calls: []
@@ -138,12 +198,12 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6465386936860972788}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+        m_TargetAssemblyTypeName: DefaultNamespace.InputSystem.InputAdapter, Assembly-CSharp
+        m_MethodName: UpInput
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -152,19 +212,67 @@ MonoBehaviour:
     m_ActionId: 3ed92a9b-385d-44e0-96bd-4e68bdfd0d8f
     m_ActionName: Player/Up[/Keyboard/w,/Keyboard/upArrow]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6465386936860972788}
+        m_TargetAssemblyTypeName: DefaultNamespace.InputSystem.InputAdapter, Assembly-CSharp
+        m_MethodName: DownInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: a649c7b0-fc17-4687-8a9b-be0ec78a785b
     m_ActionName: Player/Down[/Keyboard/s,/Keyboard/downArrow]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6465386936860972788}
+        m_TargetAssemblyTypeName: DefaultNamespace.InputSystem.InputAdapter, Assembly-CSharp
+        m_MethodName: LeftInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: c8c3ba28-e42f-46eb-b67c-71218a76766c
     m_ActionName: Player/Left[/Keyboard/a,/Keyboard/leftArrow]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6465386936860972788}
+        m_TargetAssemblyTypeName: DefaultNamespace.InputSystem.InputAdapter, Assembly-CSharp
+        m_MethodName: RightInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 5b91f6f8-9cce-4a0a-8a3e-1998b113f5ff
     m_ActionName: Player/Right[/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6465386936860972788}
+        m_TargetAssemblyTypeName: DefaultNamespace.InputSystem.InputAdapter, Assembly-CSharp
+        m_MethodName: JumpInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 99b08e74-fcab-4de3-95c8-4883f913f295
     m_ActionName: Player/Jump[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
@@ -172,3 +280,25 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6535761552966430483 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6596630271421694813, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+  m_PrefabInstance: {fileID: 87891425564683342}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2369702638064308368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925f0319d8f4fcf9782bc1c4f5a952a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8165731137363514011 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8100500175144091349, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+  m_PrefabInstance: {fileID: 87891425564683342}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2369702638064308368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3839f8e784c642f7afabd0312d468ec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

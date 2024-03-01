@@ -16,12 +16,12 @@ namespace DefaultNamespace {
             Move(_direction);
         }
 
+        [ContextMenu("MoveRight")]
         public void MoveRight() {
-            print("teste");
             _direction = 1;
         }
 
-        
+        [ContextMenu("MoveLeft")]
         public void MoveLeft() {
             _direction = -1;
         }

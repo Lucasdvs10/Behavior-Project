@@ -9,7 +9,6 @@ namespace DefaultNamespace {
 
         private void Awake() {
             _rgb = GetComponent<Rigidbody2D>();
-            print(_rgb);
         }
         
         private void Update() {

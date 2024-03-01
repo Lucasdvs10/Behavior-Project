@@ -263,17 +263,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2352840794441519787, guid: ee77d3a17953b2441be6190b4401d72a, type: 3}
-      propertyPath: m_GravityScale
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2369702638064308368, guid: ee77d3a17953b2441be6190b4401d72a, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
-      objectReference: {fileID: 0}
-    - target: {fileID: 8165731137363514011, guid: ee77d3a17953b2441be6190b4401d72a, type: 3}
-      propertyPath: _jumpForce.y
-      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

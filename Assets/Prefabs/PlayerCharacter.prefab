@@ -60,7 +60,8 @@ PrefabInstance:
       propertyPath: _jumpForce.y
       value: 15
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7920929167791522106, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -70,6 +71,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2439437208134155486, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
       insertIndex: -1
       addedObject: {fileID: -1056534718406470042}
+    - targetCorrespondingSourceObject: {fileID: 2439437208134155486, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 923808613404896587}
+    - targetCorrespondingSourceObject: {fileID: 2439437208134155486, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8143621756091530082}
+    - targetCorrespondingSourceObject: {fileID: 2439437208134155486, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3990015269092718951}
   m_SourcePrefab: {fileID: 100100000, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
 --- !u!1 &2369702638064308368 stripped
 GameObject:
@@ -115,6 +125,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 923808613404896587}
+        m_TargetAssemblyTypeName: DefaultNamespace.AnimationHandler, Assembly-CSharp
+        m_MethodName: SetAnimationState
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 923808613404896587}
+        m_TargetAssemblyTypeName: DefaultNamespace.AnimationHandler, Assembly-CSharp
+        m_MethodName: FlipSprite
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 180
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   LeftInputReleased:
     m_PersistentCalls:
       m_Calls:
@@ -122,6 +156,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: DefaultNamespace.HorizontalMovements, Assembly-CSharp
         m_MethodName: StopMoving
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 923808613404896587}
+        m_TargetAssemblyTypeName: DefaultNamespace.AnimationHandler, Assembly-CSharp
+        m_MethodName: SetAnimationState
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -145,6 +191,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 923808613404896587}
+        m_TargetAssemblyTypeName: DefaultNamespace.AnimationHandler, Assembly-CSharp
+        m_MethodName: SetAnimationState
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 923808613404896587}
+        m_TargetAssemblyTypeName: DefaultNamespace.AnimationHandler, Assembly-CSharp
+        m_MethodName: FlipSprite
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   RightInputReleased:
     m_PersistentCalls:
       m_Calls:
@@ -160,6 +230,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 923808613404896587}
+        m_TargetAssemblyTypeName: DefaultNamespace.AnimationHandler, Assembly-CSharp
+        m_MethodName: SetAnimationState
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   JumpInputPressed:
     m_PersistentCalls:
       m_Calls:
@@ -173,6 +255,30 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 923808613404896587}
+        m_TargetAssemblyTypeName: DefaultNamespace.AnimationHandler, Assembly-CSharp
+        m_MethodName: SetGroundedFlag
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 923808613404896587}
+        m_TargetAssemblyTypeName: DefaultNamespace.AnimationHandler, Assembly-CSharp
+        m_MethodName: SetAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Jump
           m_BoolArgument: 0
         m_CallState: 2
   JumpInputReleased:
@@ -288,6 +394,61 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &923808613404896587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2369702638064308368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29dc5ac46f5449fd95097b25b0a51f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8143621756091530082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2369702638064308368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f53627feb1447ba498725c7a4a0189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxLife: 10
+  _onDeathEvent: {fileID: 11400000, guid: dc865eb8389d6354884a81dec407eef3, type: 2}
+  _onDamageEvent: {fileID: 11400000, guid: 619661157721122439727be6064276ae, type: 2}
+--- !u!114 &3990015269092718951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2369702638064308368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc58acb9924566843c2d0c49c0f6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventToListen: {fileID: 11400000, guid: 619661157721122439727be6064276ae, type: 2}
+  UnityEventEmiter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 923808613404896587}
+        m_TargetAssemblyTypeName: DefaultNamespace.AnimationHandler, Assembly-CSharp
+        m_MethodName: SetAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Hurt
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6535761552966430483 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6596630271421694813, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}

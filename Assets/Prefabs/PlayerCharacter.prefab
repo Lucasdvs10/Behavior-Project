@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2941537569395322045
 Transform:
   m_ObjectHideFlags: 0
@@ -39,7 +39,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7740347725334497939}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -64,7 +64,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.19317079, y: -0.03166735}
+  m_Offset: {x: 0.19317079, y: 0.11198947}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -75,7 +75,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0063329, y: 1.0633347}
+  m_Size: {x: 1.0063329, y: 1.6060379}
   m_EdgeRadius: 0
 --- !u!1001 &87891425564683342
 PrefabInstance:
@@ -160,6 +160,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2439437208134155486, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3990015269092718951}
+    - targetCorrespondingSourceObject: {fileID: 2439437208134155486, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4964541518483841981}
   m_SourcePrefab: {fileID: 100100000, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
 --- !u!4 &279890516071029959 stripped
 Transform:
@@ -183,12 +186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b92c36083f4d03a86c8ac47a4eae76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpInputPressed:
-    m_PersistentCalls:
-      m_Calls: []
-  UpInputReleased:
-    m_PersistentCalls:
-      m_Calls: []
   DownInputPressed:
     m_PersistentCalls:
       m_Calls: []
@@ -369,6 +366,24 @@ MonoBehaviour:
   JumpInputReleased:
     m_PersistentCalls:
       m_Calls: []
+  LeftClickInputPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4964541518483841981}
+        m_TargetAssemblyTypeName: DefaultNamespace.Attack, Assembly-CSharp
+        m_MethodName: StartAttackAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LeftClickInputReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &-1056534718406470042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -534,6 +549,18 @@ MonoBehaviour:
           m_StringArgument: Hurt
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4964541518483841981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2369702638064308368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde7beaa39c5485d90d315138e6fbeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6535761552966430483 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6596630271421694813, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}

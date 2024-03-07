@@ -6,7 +6,7 @@ namespace DefaultNamespace {
         [SerializeField] private int _maxLife;
         [SerializeField] SOBaseGlobalEvent _onDeathEvent;
         [SerializeField] SOBaseGlobalEvent _onDamageEvent;
-        int _currentLife;
+        [SerializeField] int _currentLife;
         
         private void Awake() {
             _currentLife = _maxLife;

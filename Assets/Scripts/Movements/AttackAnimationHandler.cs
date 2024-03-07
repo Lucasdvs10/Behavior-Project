@@ -1,12 +1,10 @@
 using UnityEngine;
 
 namespace DefaultNamespace {
-    public class Attack : MonoBehaviour {
-        Transform _hurtBoxTransform;
+    public class AttackAnimationHandler : MonoBehaviour {
         Animator _animator;
 
         private void Awake() {
-            _hurtBoxTransform = transform.GetChild(0);
             _animator = GetComponent<Animator>();
         }
 

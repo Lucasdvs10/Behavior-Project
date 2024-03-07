@@ -6,15 +6,6 @@
             "id": "e3e09b58-c7bc-4abe-b550-f0f90d36987f",
             "actions": [
                 {
-                    "name": "Up",
-                    "type": "Button",
-                    "id": "3ed92a9b-385d-44e0-96bd-4e68bdfd0d8f",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Down",
                     "type": "Button",
                     "id": "a649c7b0-fc17-4687-8a9b-be0ec78a785b",
@@ -49,31 +40,18 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "LeftClick",
+                    "type": "Button",
+                    "id": "3ed92a9b-385d-44e0-96bd-4e68bdfd0d8f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "ca767565-dcb1-4b90-939c-63465ca78001",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Up",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "2002ae15-cebf-4bb9-8897-c84c5c5c9a38",
-                    "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Up",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "34c3cf63-2ce9-4969-9b8d-43eb399d1fdb",
@@ -148,6 +126,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "30e1382f-41b6-422d-8604-25476d8fe90a",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

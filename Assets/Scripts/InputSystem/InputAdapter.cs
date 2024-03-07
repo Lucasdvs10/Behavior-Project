@@ -4,8 +4,6 @@ using UnityEngine.InputSystem;
 
 namespace DefaultNamespace.InputSystem {
     public class InputAdapter : MonoBehaviour {
-        public UnityEvent UpInputPressed;
-        public UnityEvent UpInputReleased;
         public UnityEvent DownInputPressed;
         public UnityEvent DownInputReleased;
         public UnityEvent LeftInputPressed;
@@ -14,10 +12,12 @@ namespace DefaultNamespace.InputSystem {
         public UnityEvent RightInputReleased;
         public UnityEvent JumpInputPressed;
         public UnityEvent JumpInputReleased;
+        public UnityEvent LeftClickInputPressed;
+        public UnityEvent LeftClickInputReleased;
         
         public void UpInput(InputAction.CallbackContext context) {
-            if(context.performed) UpInputPressed?.Invoke();
-            else if(context.canceled) UpInputReleased?.Invoke();
+            if(context.performed) LeftClickInputPressed?.Invoke();
+            else if(context.canceled) LeftClickInputReleased?.Invoke();
         }
         
         public void DownInput(InputAction.CallbackContext context) {

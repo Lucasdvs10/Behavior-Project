@@ -30,7 +30,8 @@ namespace DefaultNamespace {
         }
         
         public void Move(int direction) {
-            _rgb.velocity = new Vector2(direction * _speed, _rgb.velocity.y);
+            _direction = direction;
+            _rgb.velocity = new Vector2(_direction * _speed, _rgb.velocity.y);
         }
         
     }

@@ -17,6 +17,7 @@ namespace DefaultNamespace {
             }
         }
 
+        [ContextMenu("Jump")]
         public void JumpAction() {
             if (_isJumping) return;
             

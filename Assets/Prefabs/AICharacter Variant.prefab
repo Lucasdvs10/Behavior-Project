@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6006002945553213527
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -5662099603715027482, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: _maxLife
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -5662099603715027482, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: _currentLife
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -5662099603715027482, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: _onDeathEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c5a219666a1e164085bcc3ef41f285f, type: 2}
+    - target: {fileID: -5662099603715027482, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: _onDamageEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 15ea823bf793c3a43a168cc0a459a8a2, type: 2}
+    - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.40769
+      objectReference: {fileID: 0}
+    - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.7544769
+      objectReference: {fileID: 0}
+    - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439437208134155486, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_Name
+      value: AICharacter Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439437208134155486, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838609082420660065, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838609082420660065, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9648104
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838609082420660065, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100500175144091349, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: _jumpForce.y
+      value: 15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2439437208134155486, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4944602595576422007}
+  m_SourcePrefab: {fileID: 100100000, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+--- !u!114 &4518606620532975981 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7920929167791522106, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+  m_PrefabInstance: {fileID: 6006002945553213527}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8251444357338682505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29dc5ac46f5449fd95097b25b0a51f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8251444357338682505 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2439437208134155486, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+  m_PrefabInstance: {fileID: 6006002945553213527}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4944602595576422007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8251444357338682505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc58acb9924566843c2d0c49c0f6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventToListen: {fileID: 11400000, guid: 15ea823bf793c3a43a168cc0a459a8a2, type: 2}
+  UnityEventEmiter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4518606620532975981}
+        m_TargetAssemblyTypeName: DefaultNamespace.AnimationHandler, Assembly-CSharp
+        m_MethodName: SetAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Hurt
+          m_BoolArgument: 0
+        m_CallState: 2

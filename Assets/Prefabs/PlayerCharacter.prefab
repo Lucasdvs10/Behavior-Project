@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2941537569395322045}
   - component: {fileID: 3456073900810236889}
+  - component: {fileID: 3841842402818665450}
   m_Layer: 0
   m_Name: HurtCollider
   m_TagString: Untagged
@@ -77,6 +78,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0063329, y: 1.6060379}
   m_EdgeRadius: 0
+--- !u!114 &3841842402818665450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7740347725334497939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ce0fead57b4d00b329badc7f08ddec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tagToDetect: Enemy
 --- !u!1001 &87891425564683342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85,13 +99,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5662099603715027482, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: _maxLife
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -5662099603715027482, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: _currentLife
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -5662099603715027482, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: _onDeathEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: dc865eb8389d6354884a81dec407eef3, type: 2}
+    - target: {fileID: -5662099603715027482, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      propertyPath: _onDamageEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 619661157721122439727be6064276ae, type: 2}
     - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.7417555
+      value: -7.162059
       objectReference: {fileID: 0}
     - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.8939694
+      value: -2.5009913
       objectReference: {fileID: 0}
     - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -521,6 +551,7 @@ MonoBehaviour:
   _maxLife: 10
   _onDeathEvent: {fileID: 11400000, guid: dc865eb8389d6354884a81dec407eef3, type: 2}
   _onDamageEvent: {fileID: 11400000, guid: 619661157721122439727be6064276ae, type: 2}
+  _currentLife: 0
 --- !u!114 &3990015269092718951
 MonoBehaviour:
   m_ObjectHideFlags: 0

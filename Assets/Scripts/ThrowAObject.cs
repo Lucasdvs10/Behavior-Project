@@ -10,7 +10,7 @@ namespace DefaultNamespace {
         }
         
         public void ThrowObject(int direction) {
-            var objectToThrow = Instantiate(_objectToThrow, transform.position, Quaternion.identity);
+            var objectToThrow = Instantiate(_objectToThrow, transform.position+new Vector3(0, 0.5f, 0), Quaternion.identity);
             var horizontalMovements = objectToThrow.GetComponent<HorizontalMovements>();
 
             if (horizontalMovements == null) {

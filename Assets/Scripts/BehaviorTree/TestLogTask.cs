@@ -3,12 +3,18 @@ using UnityEngine;
 
 namespace DefaultNamespace.BehaviorTree {
     public class TestLogTask : Node {
-        public TestLogTask(Node parent, List<Node> childrenList) : base(parent, childrenList) {
+        bool _returnSucessFlag;
+        
+        public TestLogTask(List<Node> childrenList, bool returnSucessFlag=true) : base(childrenList) {
+            _returnSucessFlag = returnSucessFlag;
         }
 
         public override ENodeStatus Evaluate() {
             Debug.Log("Log de teste");
-            _nodeStatus = ENodeStatus.SUCCESS;
+            if(_returnSucessFlag)
+                _nodeStatus = ENodeStatus.SUCCESS;
+            else
+                _nodeStatus = ENodeStatus.FAILED;
             return _nodeStatus;
         }
     }

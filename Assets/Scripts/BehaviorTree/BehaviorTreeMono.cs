@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace DefaultNamespace.BehaviorTree {
@@ -5,7 +7,13 @@ namespace DefaultNamespace.BehaviorTree {
         private Node _root;
 
         private void Awake() {
-            _root = new TestLogTask(null, null);
+            _root = new SequenceNode(
+                new List<Node>(){new TestLogTask(null), new TestLogTask(null, false), new TestLogTask(null)}
+                );
+        }
+
+        private void Start() {
+            EvaluateRoot();
         }
 
         [ContextMenu("Evaluate Root")]

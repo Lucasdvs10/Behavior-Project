@@ -7,8 +7,8 @@ namespace DefaultNamespace.BehaviorTree {
         private Node _root;
 
         private void Awake() {
-            _root = new SequenceNode(
-                new List<Node>(){new TestLogTask(null), new TestLogTask(null, false), new TestLogTask(null)}
+            _root = new SelectorNode(
+                new List<Node>(){new TestLogTask(null, false), new TestLogTask(null, false), new TestLogTask(null)}
                 );
         }
 

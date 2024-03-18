@@ -5,7 +5,7 @@ namespace DefaultNamespace.BehaviorTree {
     public class TestLogTask : Node {
         bool _returnSucessFlag;
         
-        public TestLogTask(List<Node> childrenList, bool returnSucessFlag=true) : base(childrenList) {
+        public TestLogTask(bool returnSucessFlag=true, List<Node> childrenList=null) : base(childrenList) {
             _returnSucessFlag = returnSucessFlag;
         }
 

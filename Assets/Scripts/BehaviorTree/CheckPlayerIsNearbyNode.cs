@@ -6,7 +6,7 @@ namespace DefaultNamespace.BehaviorTree {
         private Transform _playerTransform;
         private Transform _thisTransform;
         
-        public CheckPlayerIsNearbyNode(List<Node> childrenList, Transform playerTransform, Transform thisTransform) : base(childrenList) {
+        public CheckPlayerIsNearbyNode(Transform playerTransform, Transform thisTransform, List<Node> childrenList=null) : base(childrenList) {
             _playerTransform = playerTransform;
             _thisTransform = thisTransform;
         }

@@ -4,7 +4,7 @@ namespace DefaultNamespace.BehaviorTree {
     public class StopMovingTowardsPlayerTask : Node{
         HorizontalMovements _horizontalMovements;
         
-        public StopMovingTowardsPlayerTask(List<Node> childrenList, HorizontalMovements horizontalMovements) : base(childrenList) {
+        public StopMovingTowardsPlayerTask(HorizontalMovements horizontalMovements, List<Node> childrenList=null) : base(childrenList) {
             _horizontalMovements = horizontalMovements;
         }
 

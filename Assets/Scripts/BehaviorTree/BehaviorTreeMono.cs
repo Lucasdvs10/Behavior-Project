@@ -12,12 +12,12 @@ namespace DefaultNamespace.BehaviorTree {
             _root = new SelectorNode(new List<Node>() {
                     
                         new SequenceNode( new List<Node>(){
-                                    new CheckPlayerIsNearbyNode(null, _playerTransform, transform),
-                                    new StopMovingTowardsPlayerTask(null, GetComponent<HorizontalMovements>())
+                                    new CheckPlayerIsNearbyNode(_playerTransform, transform),
+                                    new StopMovingTowardsPlayerTask(GetComponent<HorizontalMovements>())
                                 }
                             ),
                         new SequenceNode(new List<Node>() {
-                                    new MoveTowardsPlayerTask(null, GetComponent<HorizontalMovements>(),_playerTransform)
+                                    new MoveTowardsPlayerTask(GetComponent<HorizontalMovements>(),_playerTransform)
                             }
                             )
                     }

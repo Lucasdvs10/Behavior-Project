@@ -6,7 +6,7 @@ namespace DefaultNamespace.BehaviorTree {
         HorizontalMovements _horizontalMovements;
         Transform _playerTransform;
         
-        public MoveTowardsPlayerTask(List<Node> childrenList, HorizontalMovements horizontalMovements, Transform playerTransform) : base(childrenList) {
+        public MoveTowardsPlayerTask(HorizontalMovements horizontalMovements, Transform playerTransform, List<Node> childrenList=null) : base(childrenList) {
             _horizontalMovements = horizontalMovements;
             _playerTransform = playerTransform;
         }

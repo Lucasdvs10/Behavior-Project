@@ -14,7 +14,7 @@ namespace DefaultNamespace.BehaviorTree {
             _childrenList.Remove(child);
         }
 
-        public Node(List<Node> childrenList) {
+        public Node(List<Node> childrenList = null) {
             _childrenList = childrenList;
             _nodeStatus = ENodeStatus.INACTIVE;
         }

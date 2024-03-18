@@ -4,15 +4,15 @@ using UnityEngine;
 namespace DefaultNamespace.BehaviorTree {
     public class MoveTowardsPlayerTask : Node {
         HorizontalMovements _horizontalMovements;
-        Vector3 _playerPosition;
+        Transform _playerTransform;
         
-        public MoveTowardsPlayerTask(List<Node> childrenList, HorizontalMovements horizontalMovements, Vector3 playerPosition) : base(childrenList) {
+        public MoveTowardsPlayerTask(List<Node> childrenList, HorizontalMovements horizontalMovements, Transform playerTransform) : base(childrenList) {
             _horizontalMovements = horizontalMovements;
-            _playerPosition = playerPosition;
+            _playerTransform = playerTransform;
         }
         
         private void MoveTowardsPlayer() {
-            if (_playerPosition.x > _horizontalMovements.transform.position.x) {
+            if (_playerTransform.position.x > _horizontalMovements.transform.position.x) {
                 _horizontalMovements.MoveRight();
             } else {
                 _horizontalMovements.MoveLeft();

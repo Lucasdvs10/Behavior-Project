@@ -4,12 +4,22 @@ using UnityEngine;
 namespace DefaultNamespace.BehaviorTree {
     public class BehaviorTreeMono : MonoBehaviour {
         private Node _root;
+        Transform _playerTransform;
 
         private void Awake() {
-            _root = new SelectorNode(
-                    new List<Node>() {
-                        new TestLogTask(null, false),
-                        new MoveTowardsPlayerTask(null, GetComponent<HorizontalMovements>(), GameObject.FindGameObjectWithTag("Player").transform.position)
+            _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+            
+            _root = new SelectorNode(new List<Node>() {
+                    
+                        new SequenceNode( new List<Node>(){
+                                    new CheckPlayerIsNearbyNode(null, _playerTransform, transform),
+                                    new StopMovingTowardsPlayerTask(null, GetComponent<HorizontalMovements>())
+                                }
+                            ),
+                        new SequenceNode(new List<Node>() {
+                                    new MoveTowardsPlayerTask(null, GetComponent<HorizontalMovements>(),_playerTransform)
+                            }
+                            )
                     }
                 );
         }

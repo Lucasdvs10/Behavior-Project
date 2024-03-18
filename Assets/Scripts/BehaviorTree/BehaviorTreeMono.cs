@@ -7,7 +7,10 @@ namespace DefaultNamespace.BehaviorTree {
 
         private void Awake() {
             _root = new SelectorNode(
-                new List<Node>(){new TestLogTask(null, false), new TestLogTask(null, false), new TestLogTask(null)}
+                    new List<Node>() {
+                        new TestLogTask(null, false),
+                        new MoveTowardsPlayerTask(null, GetComponent<HorizontalMovements>(), GameObject.FindGameObjectWithTag("Player").transform.position)
+                    }
                 );
         }
 

@@ -18,11 +18,13 @@ namespace DefaultNamespace {
         [ContextMenu("MoveRight")]
         public void MoveRight() {
             _direction = 1;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
         [ContextMenu("MoveLeft")]
         public void MoveLeft() {
             _direction = -1;
+            transform.rotation = Quaternion.Euler(0, 180, 0);
         }
 
         public void StopMoving() {

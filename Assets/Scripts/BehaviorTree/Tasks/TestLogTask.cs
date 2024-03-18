@@ -10,8 +10,11 @@ namespace DefaultNamespace.BehaviorTree {
         }
 
         public override ENodeStatus Evaluate() {
-            Debug.Log("Log de teste");
             _nodeStatus = _returnSucessFlag ? ENodeStatus.SUCCESS : ENodeStatus.FAILED;
+            
+            if(_returnSucessFlag)
+                Debug.Log("Log de teste");
+            
             return _nodeStatus;
         }
     }

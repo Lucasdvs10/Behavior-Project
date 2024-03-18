@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace DefaultNamespace.BehaviorTree {
@@ -6,11 +5,12 @@ namespace DefaultNamespace.BehaviorTree {
         private Node _root;
 
         private void Awake() {
-            
+            _root = new TestLogTask(null, null);
         }
 
+        [ContextMenu("Evaluate Root")]
         public void EvaluateRoot() {
-            
+            _root.Evaluate();
         }
     }
 }

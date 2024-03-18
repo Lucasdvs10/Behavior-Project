@@ -26,11 +26,11 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 15ea823bf793c3a43a168cc0a459a8a2, type: 2}
     - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.40769
+      value: -6.319267
       objectReference: {fileID: 0}
     - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7544769
+      value: -2.88
       objectReference: {fileID: 0}
     - target: {fileID: 205509959637528713, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -95,6 +95,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2439437208134155486, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4944602595576422007}
+    - targetCorrespondingSourceObject: {fileID: 2439437208134155486, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3486900005729269479}
   m_SourcePrefab: {fileID: 100100000, guid: aa3c3c71ca413c4499d3eef520ec79c6, type: 3}
 --- !u!114 &4518606620532975981 stripped
 MonoBehaviour:
@@ -140,3 +143,16 @@ MonoBehaviour:
           m_StringArgument: Hurt
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3486900005729269479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8251444357338682505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02e0741d1a1f4347aa01e84b1fb5b2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToThrow: {fileID: 7068646611384305696, guid: 9f40b52c730a60546b76ce5ce2b39900, type: 3}

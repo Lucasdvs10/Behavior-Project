@@ -12,7 +12,7 @@ namespace DefaultNamespace.BehaviorTree {
         }
 
         public override ENodeStatus Evaluate() {
-            if (Vector3.SqrMagnitude(_playerTransform.position - _thisTransform.position) < 25) {
+            if (Vector3.SqrMagnitude(_playerTransform.position - _thisTransform.position) < 9) {
                 _nodeStatus = ENodeStatus.SUCCESS;
             } else {
                 _nodeStatus = ENodeStatus.FAILED;
